@@ -1,0 +1,27 @@
+# Environment variables
+**/.env*
+backend/.env
+# Credentials  
+backend/credentials.json
+backend/token.json
+backend/serviceAccountKey.json
+
+
+# Python
+backend/__pycache__/
+backend/*.pyc
+backend/instance/
+
+# Virtual environments
+backend/.venv/
+backend/env/
+backend/venv/
+
+# IDE/Editor
+backend/.vscode/
+
+# OS
+backend/.DS_Store
+
+node_modules/
+.gitignore

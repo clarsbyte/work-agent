@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+html, body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'ZT Formom';
+  src: url('../fonts/zt-formom/ZT Formom.woff2') format('woff2'),
+       url('../fonts/zt-formom/ZT Formom.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'coolvetica';
+  src: url('../fonts/coolvetica/Coolvetica.woff2') format('woff2'),
+       url('../fonts/coolvetica/Coolvetica.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@theme{
+  --color-background: #FDFDFD;
+  --color-primary:#DAF34E;
+  --font-family: 'Poppins', sans-serif;
+  --font-coolvetica: 'coolvetica', sans-serif;
+  --font-instrument-serif: 'Instrument Serif', serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-zt-formom: 'ZT Formom', sans-serif;
+}
+
+.line {
+  background: linear-gradient(to bottom, #d1d5db 0%, #d1d5db 90%, transparent 100%);
+}
+
+body{
+  background-color: var(--color-background);
+}
+
+@keyframes fade-in{
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
+
+.modal{
+  background-color: rgb(0,0,0,50%);
+}
+
+.title {
+  background: linear-gradient(to bottom, 
+    white 0%, 
+    rgba(255, 255, 255, 0) 100%
+  );
+}
