@@ -16,6 +16,17 @@ const Chat = () => {
   const [inputMessage, setInputMessage] = useState('');
   const [isCreating, setIsCreating] = useState(false);
 
+  const getGreeting = () => {
+    const hour = new Date().getHours();
+    if (hour >= 4 && hour < 12) {
+      return "Good morning";
+    } else if (hour >= 12 && hour < 18) {
+      return "Good afternoon";
+    } else {
+      return "Good evening";
+    }
+  };
+
   useEffect(() => {
     const fetchData = async () => {
       if (user) {
@@ -64,7 +75,7 @@ const Chat = () => {
   return (
       <div className="flex-1 p-5 flex flex-col gap-5 items-center justify-center h-screen">
         <div className="text-center">
-          <h1 className='font-poppins text-3xl'>Good Morning, {userInfo.username || 'User'}. <br />
+          <h1 className='font-poppins text-3xl'>{getGreeting()}, {userInfo.username || 'User'}. <br />
           How can I help you today?</h1>
         </div>
         <div className="box z-100 font-inter font-medium bg-white drop-shadow-xl rounded-3xl p-5 max-w-2xl w-full flex flex-col justify-end">

@@ -8,17 +8,32 @@ const Page = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
   const router = useRouter();
 
   const handleSignUp = async () => {
+    setErrorMessage('');
+
+    if (!name.trim()) {
+      setErrorMessage('Name is required');
+      return;
+    }
+    if (!email.trim()) {
+      setErrorMessage('Email is required');
+      return;
+    }
+    if (password.length < 6) {
+      setErrorMessage('Password must be at least 6 characters long');
+      return;
+    }
+
     try {
       const user = await SignUp(email, password, name);
       console.log('User created:', user);
-      // Log out the user immediately after account creation for security
       await LogOut();
       router.push('/log-in');
     } catch (err) {
-      console.log(err);
+      setErrorMessage('Incorrect information');
     }
   };
   return (
@@ -34,6 +49,9 @@ const Page = () => {
         <input onChange={(event) => setEmail(event.target.value)} type="email" className='bg-[#F4F4F4] w-70 h-8 rounded-md px-2 py-1 focus:outline-none' />
         <h3 className='font-inter font-medium'>Password</h3>
         <input onChange={(event) => setPassword(event.target.value)} type="password" className='bg-[#F4F4F4] w-70 h-8 rounded-md px-2 py-1 focus:outline-none' />
+        {errorMessage && (
+          <p className='font-inter text-sm text-red-600'>{errorMessage}</p>
+        )}
         <p className='font-inter text-sm'>Already have an account? <Link className='hover:text-gray-500' href='/log-in'>Log in</Link></p>
         <button onClick={() => handleSignUp()} className='bg-primary font-poppins w-70 text-center px-5 py-1 rounded-2xl hover:cursor-pointer'>
             Continue
