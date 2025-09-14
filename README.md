@@ -261,6 +261,7 @@ NEXT_PUBLIC_FIREBASE_API_KEY = YOUR_FIREBASE_KEY
 - Check if all Python dependencies are installed: `pip install -r requirements.txt`
 - Verify your `.env` file is in the `backend/` directory
 - Make sure `credentials.json` is present in the `backend/` directory
+- Make sure `serviceAccountKey.json` is present in the `backend/` directory
 
 **Frontend not starting:**
 - Ensure you're in the `frontend/` directory when running `npm run dev`
