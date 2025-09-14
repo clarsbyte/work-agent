@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="background bg-background mx-10 mt-9 relative">
+    <div className="background bg-background mx-10 mt-9 relative min-h-screen">
       <Navbar/>
       <div className="hero h-screen flex flex-col gap-8 items-center justify-center">
         <Image src='mesh.svg' width={200} height={200} alt="grad" className="absolute -right-10 z-20"/>
@@ -35,10 +36,24 @@ export default function Home() {
           <div className="line absolute right-0 top-[calc(-60vh)] w-px h-[100vh] bg-gray-300"></div>
         </div>
       </div>
-      <div className="features mt-16 text-center relative">
+      <div className="features text-center relative">
         <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-background to-transparent pointer-events-none"></div>
         <h1 className="font-zt-formom text-5xl relative z-10">An AI agent built to ease your work.</h1>
+        <div className="video mt-5 flex justify-center">
+          <div className="w-full max-w-4xl p-4 rounded-2xl">
+            <video
+              className="w-full h-fit rounded-2xl shadow-lg bg-gray-100 mt-4"
+              muted
+              autoPlay
+              preload="metadata"
+            >
+              <source src="/demo-video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }
