@@ -8,6 +8,7 @@ Walkthrough video:
 
 <img width="1910" height="910" alt="image" src="https://github.com/user-attachments/assets/78d6b583-5675-4763-b67a-34d7727f9866" />
 <img width="1916" height="887" alt="image" src="https://github.com/user-attachments/assets/35d657f9-3070-4674-8eb8-adb49994f70e" />
+
 ## Features
 
 - **AI-Powered Workflow Optimization** - Intelligent automation to streamline your daily tasks
