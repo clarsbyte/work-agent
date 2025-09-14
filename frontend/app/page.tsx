@@ -25,9 +25,9 @@ export default function Home() {
                 <Image alt="calendar" width={30} height={30} src='https://upload.wikimedia.org/wikipedia/commons/a/a5/Google_Calendar_icon_%282020%29.svg' className="hover:scale-110 hover:-translate-y-1 transform transition-all duration-200 cursor-pointer"/>
 
               </div>
-              <button className="bg-primary w-14 h-10 flex items-center justify-center rounded-md hover:bg-[#A0B71F] transition-colors duration-200 group">
+              <a href="/log-in" className="bg-primary w-14 h-10 flex items-center justify-center rounded-md hover:bg-[#A0B71F] transition-colors duration-200 group">
                 <Image alt="arrow" width={30} height={30} src='/Arrow_Right_LG.svg' className="group-hover:translate-x-1 transition-transform duration-200"/>
-              </button>
+              </a>
             </div>
           </div>
           <div className="absolute top-0 left-[calc(50%-45vw)] w-[90vw] h-px bg-gray-300"></div>
