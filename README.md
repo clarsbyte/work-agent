@@ -7,9 +7,7 @@ Integrated with Gmail and Google Calendar, Worme can help you send emails and sc
 <img width="1910" height="910" alt="image" src="https://github.com/user-attachments/assets/78d6b583-5675-4763-b67a-34d7727f9866" />
 <img width="1916" height="887" alt="image" src="https://github.com/user-attachments/assets/35d657f9-3070-4674-8eb8-adb49994f70e" />
 Walkthrough video:
-https://github.com/user-attachments/assets/da20d218-64f4-40e6-8799-96df91496f37
-
-
+https://github.com/user-attachments/assets/b2f3050e-2525-413f-bab8-25f6c368a1e1
 
 ## Features
 
