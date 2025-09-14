@@ -27,7 +27,7 @@ const page = () => {
             </div>
             <div className="feature flex items-center gap-4">
               <div className="w-2 h-2 bg-black rounded-full"></div>
-              <span className="font-inter text-gray-600">Chatbot can be utilized for general usage</span>
+              <span className="font-inter text-gray-600">Chatbot for general usage</span>
             </div>
           </div>
         </div>
